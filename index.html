@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paws & Preferences 🐾</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="app-header">
+    <div class="header-top">
+      <h1>🐾 Paws & Preferences</h1>
+      <button id="theme-toggle">🌙</button>
+    </div>
+    <p>Swipe right to ❤️ like, left to ❌ skip</p>
+    <div class="progress">
+      <span id="progress-text">1 / 10</span>
+    </div>
+  </header>
+
+  <main>
+    <div id="card-container"></div>
+  </main>
+
+  <!-- ACTION BUTTONS -->
+  <div class="controls">
+    <button id="dislike-btn" class="action-btn dislike">❌ Skip</button>
+    <button id="like-btn" class="action-btn like">❤️ Like</button>
+  </div>
+
+  <!-- RESULT -->
+  <section id="result" class="hidden result">
+    <h2>🎉 All Done!</h2>
+    <p>You liked <strong><span id="like-count"></span></strong> cats</p>
+    <div id="liked-cats"></div>
+    <button onclick="location.reload()" class="action-btn like">🔄 Try Again</button>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
